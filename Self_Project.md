@@ -133,3 +133,87 @@
         }
     </style>
 ```
+
+
+## Project 2.
+### Your local Time nad Date
+#### Javascript
+
+```javascript
+const clock = document.getElementById('clock');
+const clockes = document.querySelector('#clocks')
+setInterval(function () {
+    let date = new Date()
+    clockes.innerHTML = date.toDateString();
+})
+
+setInterval(function (){
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+
+```
+
+#### HTML
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="center">
+        <div id="banner"><span>Your local Time and Date</span></div>
+        <div id="clocks"></div>
+        <div id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
+#### CSS
+```css
+<style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .center {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #clock {
+            font-size: 30px;
+            background-color: orange;
+            padding: 20px 40px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        #clocks {
+            font-size: 20px;
+            background-color: orange;
+            padding: 5px 60px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        #banner {
+            color: rgb(62, 159, 17);
+            font-size: 3rem;
+        }
+    </style>
+```
