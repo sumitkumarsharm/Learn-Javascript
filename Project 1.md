@@ -45,8 +45,31 @@ buttons.forEach((button)=>{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>color changer</title>
-    <style>
-        html {
+    
+</head>
+
+<body>
+    <div id="canvas">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="KaiGreen"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="Yellow"></span>
+        <h2>
+            to clicking on the colors above
+            <span> to change the background color of this page!</span>
+        </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
+#### CSS
+```css
+<style>
+ html {
             margin: 0;
         }
 
@@ -83,25 +106,5 @@ buttons.forEach((button)=>{
             background: yellow;
         }
     </style>
-</head>
-
-<body>
-    <div id="canvas">
-        <h1>Color Scheme Switcher</h1>
-        <span class="button" id="KaiGreen"></span>
-        <span class="button" id="white"></span>
-        <span class="button" id="blue"></span>
-        <span class="button" id="Yellow"></span>
-        <h2>
-            to clicking on the colors above
-            <span> to change the background color of this page!</span>
-        </h2>
-    </div>
-    <script src="script.js"></script>
-</body>
-
-</html>
-
-
 ```
 
