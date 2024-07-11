@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(247, 181, 181, 0.386);
+    font-family: sans-serif;
+}
+
+main {
+    padding: 0px 10px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    color: green;
+    font-family: 'poppins';
+}
+
+
+
+h1 .sec_span {
+    color: rgb(73, 36, 36);
+}
+
+.Container {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 100px 0px rgba(128, 128, 128, 0.478);
+}
+
+.Container h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(236, 97, 42);
+}
+
+.Container h2 img {
+    vertical-align: middle;
+}
+
+.span_container {
+    position: relative;
+}
+
+.image-2 {
+    position: absolute;
+    top: 22px;
+    left: 19.3px;
+}
+
+.image-1 {
+    animation-name: Rotation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Container .Goals_moto {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgba(69, 67, 67, 0.642);
+    margin-block: 18px;
+}
+
+.progressbar {
+    position: relative;
+    height: 30px;
+    background-color: rgb(67, 211, 177);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.progressbar .proggress_color {
+    width: 0;
+    height: 100%;
+    background-color: rgb(116, 95, 233);
+    transition: all 2s;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.progressbar .proggress_text {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    transform: translateY(-50%);
+}
+
+.Container .Selected_goals_alert {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(235, 66, 66, 0.769);
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    display: none;
+
+}
+
+.display_Error .Selected_goals_alert {
+    display: block;
+}
+
+.Container .First_task {
+    width: 100%;
+    height: 60px;
+    margin-block: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid rgba(128, 128, 128, 0.415);
+    border-radius: 10px;
+    padding: 0px 10px;
+
+}
+
+.Container .custom_checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 2px solid rgba(92, 92, 91, 0.396);
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check_icon {
+    display: none;
+}
+
+.Container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'poppins';
+    margin-left: 22px;
+
+}
+
+.Sun_rotation {
+    animation-name: sunRotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.Container input::placeholder {
+    color: rgba(153, 155, 157, 0.388);
+}
+
+.completed .custom_checkbox {
+    background-color: green;
+    border: green;
+}
+
+.completed .check_icon {
+    display: block;
+}
+
+.completed .fst_text {
+    color: green;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+/* animation */
+@keyframes Rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* media querry */
+@media (max-width:768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .Container h2 {
+        font-size: 1.8em;
+    }
+}
